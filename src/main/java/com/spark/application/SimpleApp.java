@@ -21,6 +21,6 @@ public class SimpleApp {
       public Boolean call(String s) { return s.contains("b"); }
     }).count();
 
-    System.out.println("PRIYA Lines with a test: " + numAs + ", priya lines with b: " + numBs);
+    System.out.println("PRIYA Lines with a test : " + numAs + ", priya lines with b: " + numBs);
   }
 }
