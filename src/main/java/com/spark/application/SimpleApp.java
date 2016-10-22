@@ -8,6 +8,7 @@ import org.apache.spark.api.java.function.Function;
 public class SimpleApp {
   public static void main(String[] args) {
     String logFile = "/home/rushika/Desktop/input/test.txt"; // Should be some file on your system
+    //testing by priya
     SparkConf conf = new SparkConf().setAppName("Simple Application");
     JavaSparkContext sc = new JavaSparkContext(conf);
     JavaRDD<String> logData = sc.textFile(logFile).cache();
@@ -20,6 +21,6 @@ public class SimpleApp {
       public Boolean call(String s) { return s.contains("b"); }
     }).count();
 
-    System.out.println("Lines with a: " + numAs + ", lines with b: " + numBs);
+    System.out.println("PRIYA Lines with a: " + numAs + ", priya lines with b: " + numBs);
   }
 }
